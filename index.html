@@ -1,41 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GRI Representative Card</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="card">
-    <div class="badge">
-      <img src="assets/medal-icon.svg" alt="medal" />
-      <span>REPRESENTATIVE</span>
-    </div>
-    <div class="header">
-      <div class="profile-pic">
-        <img src="assets/profile.jpg" alt="Profile" />
-        <img class="flag" src="assets/brazil-flag.svg" alt="Brazil" />
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>GRI Representative Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .gold-text { color: #bfa64b; }
+      .gold-border { border-color: #bfa64b; }
+      .gold-bg { background-color: #bfa64b; }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white rounded-2xl shadow-lg max-w-xl w-full p-4 relative">
+      
+      <!-- Badge: REPRESENTATIVE -->
+      <div class="absolute -top-4 left-4 bg-white px-3 py-1 flex items-center rounded-full border shadow text-xs font-semibold text-gray-500">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#facc15" viewBox="0 0 24 24" class="w-4 h-4 mr-1">
+          <path d="M12 2L9.09 8.26 2 9.27l5.46 4.73L5.82 22 12 18.27 18.18 22l-1.64-7.99L22 9.27l-7.09-1.01L12 2z"/>
+        </svg>
+        REPRESENTATIVE
       </div>
-      <div class="info">
-        <h1>Armless John</h1>
-        <p>Software Developer<br />GRI Institute</p>
-        <strong>Servers, Web And Mobile</strong>
+
+      <div class="flex items-start gap-4">
+        <!-- Foto + bandeira -->
+        <div class="relative">
+          <img src="https://cdn.griinstitute.org/uploads/crm_people/0031R00002OUMta_Marketing_Edited_Photo_2025-02-03_11-53-29.jpg" alt="Foto do Representante" class="w-24 h-24 rounded-full border-2 border-white shadow object-cover"/>
+          <img src="https://www.griinstitute.org/assets/img/country_flags/1x1/br.svg" alt="Bandeira Brasil" class="w-6 h-6 rounded-full border-2 border-white absolute bottom-0 right-0"/>
+        </div>
+
+        <!-- Infos principais -->
+        <div class="flex-1">
+          <div class="flex justify-between items-start">
+            <div>
+              <h2 class="text-xl font-bold gold-text">Armless John</h2>
+              <p class="text-sm text-gray-500 leading-tight">Software Developer</p>
+              <p class="text-sm text-gray-500 leading-tight">GRI Institute</p>
+            </div>
+            <img src="https://cdn.griinstitute.org/uploads/crm_company/0033600000DmrRO_Marketing_Edited_Logo_2025-06-14_01-23-10.jpg" alt="Logo GRI" class="w-16 object-contain"/>
+          </div>
+
+          <!-- Área de atuação -->
+          <p class="text-sm text-blue-900 font-semibold mt-2">Servers, Web And Mobile</p>
+
+          <!-- Barra de Match -->
+          <div class="flex items-center gap-2 mt-2">
+            <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+              <div class="bg-blue-900 h-full w-2/3"></div>
+            </div>
+            <span class="text-sm font-semibold text-black">66% Match</span>
+          </div>
+        </div>
+
+        <!-- Favorito -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#bfa64b" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6 mt-1">
+          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+        </svg>
       </div>
-      <img class="logo" src="assets/gri-logo.png" alt="GRI Logo" />
-      <img class="star" src="assets/star-outline.svg" alt="Favorite" />
+
+      <!-- Botões -->
+      <div class="grid grid-cols-3 gap-2 mt-4">
+        <button class="border gold-border text-sm gold-text font-semibold py-2 px-3 rounded-lg hover:bg-gray-50 transition">Intro request</button>
+        <button class="border gold-border text-sm gold-text font-semibold py-2 px-3 rounded-lg hover:bg-gray-50 transition">Private Meeting</button>
+        <button class="gold-bg text-white font-semibold text-sm py-2 px-3 rounded-lg flex items-center justify-center gap-1 hover:opacity-90 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" class="w-4 h-4">
+            <path d="M20 2H4a2 2 0 0 0-2 2v14l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+          </svg>
+          Chat
+        </button>
+      </div>
     </div>
-    <div class="match-bar">
-      <div class="bar"></div>
-      <span>66% Match</span>
-    </div>
-    <div class="buttons">
-      <button class="outlined">Intro request</button>
-      <button class="outlined">Private Meeting</button>
-      <button class="filled">
-        <img src="assets/chat-icon.svg" alt="Chat" /> Chat
-      </button>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
