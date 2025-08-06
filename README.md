@@ -1,6 +1,6 @@
-# GRI Representative Card
+# GRI Teste!
 
-Este projeto é um exemplo de componente visual de cartão de representante, baseado no layout do GRI Institute.
+Sendo este projeto um teste para GRI, para ser um componente visual de cartão de representante, baseado no layout do GRI Institute.
 
 ## Como usar
 
